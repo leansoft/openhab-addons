@@ -144,4 +144,9 @@ public class OmnikInverterMessageTest {
     public void testGetTemperature() {
         assertEquals(31.7, message.getTemperature(), 0.01);
     }
+
+    @Test
+    public void testGetHoursTotal() {
+        assertEquals(17693, message.getHoursTotal(), 0.01);
+    }
 }

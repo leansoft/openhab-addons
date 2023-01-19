@@ -34,6 +34,7 @@
 			<channel id="energyToday" typeId="energyToday"/>
 			<channel id="energyTotal" typeId="energyTotal"/>
 			<channel id="temperature" typeId="temperature"/>
+			<channel id="hoursTotal" typeId="hoursTotal"/>
 		</channels>
 
 		<config-description>
@@ -189,6 +190,13 @@
 		<item-type>Number:Temperature</item-type>
 		<label>Temperature</label>
 		<description>Current temperature</description>
+		<state readOnly="true" pattern="%.f %unit%"/>
+	</channel-type>
+
+	<channel-type id="hoursTotal">
+		<item-type>Number:Time</item-type>
+		<label>Running hours</label>
+		<description>The totale amount of running hours</description>
 		<state readOnly="true" pattern="%.f %unit%"/>
 	</channel-type>
 </thing:thing-descriptions>

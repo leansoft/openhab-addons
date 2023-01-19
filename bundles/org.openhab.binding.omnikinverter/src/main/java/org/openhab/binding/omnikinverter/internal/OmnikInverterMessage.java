@@ -141,7 +141,7 @@ public class OmnikInverterMessage {
      * @deprecated
      */
     public double getPower() {
-        return getShort(59, 1);
+        return getPowerAC1();
     }
 
     /**
