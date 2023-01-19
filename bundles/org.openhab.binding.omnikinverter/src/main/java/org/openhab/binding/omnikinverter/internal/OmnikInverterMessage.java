@@ -202,4 +202,12 @@ public class OmnikInverterMessage {
     public double getTemperature() {
         return getShort(31, 10);
     }
+
+    /**
+     *
+     * @return the total amount of hours the inverter produced energy
+     */
+    public double getHoursTotal() {
+        return getShort(75, 1);
+    }
 }
