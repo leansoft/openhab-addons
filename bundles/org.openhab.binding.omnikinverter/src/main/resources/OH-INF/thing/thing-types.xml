@@ -10,7 +10,6 @@
 
 		<channels>
 			<channel id="power" typeId="power"/>
-
 			<channel id="powerAC1" typeId="powerAC1"/>
 			<channel id="powerAC2" typeId="powerAC2"/>
 			<channel id="powerAC3" typeId="powerAC3"/>
@@ -23,14 +22,12 @@
 			<channel id="frequencyAC1" typeId="frequencyAC1"/>
 			<channel id="frequencyAC2" typeId="frequencyAC2"/>
 			<channel id="frequencyAC3" typeId="frequencyAC3"/>
-
 			<channel id="currentPV1" typeId="currentPV1"/>
 			<channel id="currentPV2" typeId="currentPV2"/>
 			<channel id="currentPV3" typeId="currentPV3"/>
 			<channel id="voltagePV1" typeId="voltagePV1"/>
 			<channel id="voltagePV2" typeId="voltagePV2"/>
 			<channel id="voltagePV3" typeId="voltagePV3"/>
-
 			<channel id="energyToday" typeId="energyToday"/>
 			<channel id="energyTotal" typeId="energyTotal"/>
 			<channel id="temperature" typeId="temperature"/>
@@ -80,7 +77,6 @@
 		<description>The instantaneous power generation for output 3</description>
 		<state readOnly="true" pattern="%.1f %unit%"/>
 	</channel-type>
-
 	<channel-type id="voltageAC1" advanced="true">
 		<item-type>Number:ElectricPotential</item-type>
 		<label>Voltage AC1</label>
@@ -99,7 +95,6 @@
 		<description>The voltage for output 3</description>
 		<state readOnly="true" pattern="%.1f %unit%"/>
 	</channel-type>
-
 	<channel-type id="currentAC1" advanced="true">
 		<item-type>Number:ElectricCurrent</item-type>
 		<label>Current AC1</label>
@@ -118,26 +113,24 @@
 		<description>The current for output 3</description>
 		<state readOnly="true" pattern="%.1f %unit%"/>
 	</channel-type>
-
-	<channel-type id="frequenyAC1" advanced="true">
-		<item-type>Number:Frequeny</item-type>
-		<label>Frequeny AC1</label>
-		<description>The frequeny for output 1</description>
+	<channel-type id="frequencyAC1" advanced="true">
+		<item-type>Number:Frequency</item-type>
+		<label>Frequency AC1</label>
+		<description>The frequency for output 1</description>
 		<state readOnly="true" pattern="%.2f %unit%"/>
 	</channel-type>
-	<channel-type id="frequenyAC2" advanced="true">
-		<item-type>Number:Frequeny</item-type>
-		<label>Frequeny AC2</label>
-		<description>The frequeny for output 2</description>
+	<channel-type id="frequencyAC2" advanced="true">
+		<item-type>Number:Frequency</item-type>
+		<label>Frequency AC2</label>
+		<description>The frequency for output 2</description>
 		<state readOnly="true" pattern="%.2f %unit%"/>
 	</channel-type>
-	<channel-type id="frequenyAC3" advanced="true">
-		<item-type>Number:Frequeny</item-type>
-		<label>Frequeny AC3</label>
-		<description>The frequeny for output 3</description>
+	<channel-type id="frequencyAC3" advanced="true">
+		<item-type>Number:Frequency</item-type>
+		<label>Frequency AC3</label>
+		<description>The frequency for output 3</description>
 		<state readOnly="true" pattern="%.2f %unit%"/>
 	</channel-type>
-
 	<channel-type id="currentPV1">
 		<item-type>Number:ElectricCurrent</item-type>
 		<label>Current PV1</label>
@@ -192,7 +185,6 @@
 		<description>Current temperature</description>
 		<state readOnly="true" pattern="%.f %unit%"/>
 	</channel-type>
-
 	<channel-type id="hoursTotal">
 		<item-type>Number:Time</item-type>
 		<label>Running hours</label>
