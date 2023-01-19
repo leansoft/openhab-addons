@@ -57,17 +57,17 @@ public class OmnikInverterMessageTest {
 
     @Test
     public void testGetVoltageAC1() {
-        assertEquals(137.0, message.getVoltageAC1(), 0.01);
+        assertEquals(236.0, message.getVoltageAC1(), 0.01);
     }
 
     @Test
     public void testGetVoltageAC2() {
-        assertEquals(-1.0, message.getVoltageAC2(), 0.01);
+        assertEquals(-0.1, message.getVoltageAC2(), 0.01);
     }
 
     @Test
     public void testGetVoltageAC3() {
-        assertEquals(-1.0, message.getVoltageAC3(), 0.01);
+        assertEquals(-0.1, message.getVoltageAC3(), 0.01);
     }
 
     @Test
@@ -77,12 +77,12 @@ public class OmnikInverterMessageTest {
 
     @Test
     public void testGetCurrentAC2() {
-        assertEquals(-1.0, message.getCurrentAC2(), 0.01);
+        assertEquals(-0.1, message.getCurrentAC2(), 0.01);
     }
 
     @Test
     public void testGetCurrentAC3() {
-        assertEquals(-1.0, message.getCurrentAC3(), 0.01);
+        assertEquals(-0.1, message.getCurrentAC3(), 0.01);
     }
 
     @Test
@@ -92,12 +92,12 @@ public class OmnikInverterMessageTest {
 
     @Test
     public void testGetFrequencyAC2() {
-        assertEquals(-1.0, message.getFrequencyAC2(), 0.01);
+        assertEquals(-0.01, message.getFrequencyAC2(), 0.01);
     }
 
     @Test
     public void testGetFrequencyAC3() {
-        assertEquals(-1.0, message.getFrequencyAC3(), 0.01);
+        assertEquals(-0.01, message.getFrequencyAC3(), 0.01);
     }
 
     @Test
